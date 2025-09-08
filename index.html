@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nnamdi Vincent-Otiono · Portfolio</title>
+  <meta name="description" content="Portfolio website for Nnamdi Vincent-Otiono. HTML, CSS, and Bootstrap projects." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav">
+      <a class="brand" href="#top">Nnamdi</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="hero container" id="top">
+      <div class="hero-content">
+        <h1>Hi, I'm Nnamdi Vincent-Otiono.</h1>
+        <p>Software & Web Developer Diploma student · Building with HTML, CSS, Bootstrap, and JavaScript.</p>
+        <div class="cta">
+          <a class="btn" href="#projects">See my work</a>
+          <a class="btn ghost" href="https://github.com/Nnamdivo" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+      <div class="hero-art" role="img" aria-label="Abstract code background"></div>
+    </section>
+  </header>
+
+  <main>
+    <section id="about" class="container section">
+      <h2>About</h2>
+      <p>I’m currently enrolled in the Software and Web Developer diploma at Academy of Learning Career College. I enjoy turning ideas into clean, accessible web interfaces. I'm learning fast and focused on building real projects.</p>
+      <div class="about-grid">
+        <div>
+          <h3>What I'm doing now</h3>
+          <ul>
+            <li>Practicing HTML/CSS and Bootstrap through hands-on projects</li>
+            <li>Strengthening JavaScript fundamentals</li>
+            <li>Publishing projects on GitHub Pages</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Highlights</h3>
+          <ul>
+            <li>Bootstrap 4 multi-section website (CinemaX)</li>
+            <li>Clean, semantic HTML and responsive CSS</li>
+            <li>Accessible forms and in‑page navigation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul class="chip-list">
+          <li>HTML5</li><li>CSS3</li><li>Bootstrap 4</li><li>Responsive Design</li><li>Git & GitHub</li><li>VS Code</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="container section">
+      <h2>Projects</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="https://picsum.photos/800/500?random=21" alt="Screenshot placeholder for Bootstrap site" />
+          <div class="card-body">
+            <h3>Bootstrap 4 Site — CinemaX</h3>
+            <p>A responsive multi‑section site with a fixed navbar, hero header, showtimes cards, deals section, and a contact form.</p>
+            <div class="card-actions">
+              <a class="btn" href="bootstrap4_project/index.html">Open Demo</a>
+              <a class="btn ghost" href="https://github.com/Nnamdivo" target="_blank" rel="noopener">View on GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <ul class="contact-list">
+          <li><a href="mailto:vincentotiononnamdi@gmail.com">vincentotiononnamdi@gmail.com</a></li>
+          <li><a href="https://github.com/Nnamdivo" target="_blank" rel="noopener">github.com/Nnamdivo</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year"></span> Nnamdi Vincent-Otiono. Built with HTML &amp; CSS.</small>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => { 
+      document.getElementById('year').textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>
